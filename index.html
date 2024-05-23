@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Project - Carousel</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Carousel Example</h2> 
+    <div id="myCarousel" class="carousel">
+        
+        <div class="carousel-inner"><!-- Wrapper for slides -->
+            <div class="item active">
+                <img src="img/la.jpg" alt="Los Angeles" width="96%" height="100%">
+            </div>
+            <div class="item">
+                <img src="img/chicago.jpg" alt="Chicago" width="96%" height="100%">
+            </div>
+            <div class="item">
+                <img src="img/ny.jpg" alt="New York" width="96%" height="100%">
+            </div>
+        </div>
+        <ol id="indicators"></ol>
+
+        <!-- Left and right controls -->
+        <button id="previous" class="previous">
+            <img src="img/chevron-left.png" alt="right" width="40%" height="25%">
+        </button>
+        <button id="next" class="next">
+            <img src="img/chevron-right.png" alt="right" width="40%" height="25%">
+        </button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

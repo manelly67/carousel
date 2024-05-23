@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* hasta aqui el reseteo de los estilos prediseñados de los buscadores
+*/
+
+
+h2 {
+    font-size: 2rem;
+}
+
+.container{
+
+color:#500000;
+--box-width: 650px;
+--box-height: 500px;
+}
+
+.carousel {
+    width: var(--box-width);
+    height: var(--box-height);
+    position: relative;
+    top: calc(var(--box-height)*0.02);
+    left: calc(var(--box-width)*0.1);
+    border: 2px solid #500000; 
+    display: grid;
+    grid-template-rows: calc(var(--box-height)*0.03) calc(var(--box-height)*0.9) calc(var(--box-height)*0.07);  
+}
+
+.carousel-inner{
+    grid-row: 2/3;  /* asociado al grid carousel */
+
+    height: calc(var(--box-height)*0.9); 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: calc(var(--box-width)*0.05);
+    
+}
+
+#indicators{
+    
+    grid-row: 3/4;  /* asociado al grid carousel */
+    width: calc(var(--box-width)*0.25);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: calc(var(--box-width)*0.35);
+
+}
+
+.item {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.previous{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+}
+
+.next{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+
+button {
+    background-color: white;
+    opacity: 0.2;
+    border: 0px;
+}
+
+button:hover{
+    background-color:azure;
+    border: 0px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.circle-active{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+    background-color: grey;
+}
+
+ol>button{
+    opacity: 0.9;
+}
+
+ol>button:hover{
+    background-color: grey;
+}
